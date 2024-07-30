@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Julias</h1>
-<h3 align="center">IT ENGINEER / DEV-OPS MONKEY</h3>
+<h3 align="center">IT ENGINEER / DEV-OPS </h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=iaskeyz69&label=Profile%20views&color=0e75b6&style=flat" alt="iaskeyz69" /> </p>
 
