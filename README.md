@@ -77,7 +77,7 @@
 ###
 
 <br clear="both">
-
+![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=905qpeujmughihga388l6ulhl&unique={true|1|on|yes})
 <img src="https://raw.githubusercontent.com/iaskeyz69/iaskeyz69/output/snake.svg" alt="Snake animation" />
 
 ###
