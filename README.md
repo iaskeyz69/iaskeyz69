@@ -10,7 +10,7 @@
 ###
 
 
-
+<img align="right" height="300" src="https://media1.tenor.com/m/CRHGaMQTTc8AAAAd/fortnite-master-chief.gif"  />
 
 
 ###
@@ -81,4 +81,4 @@
 <img src="https://raw.githubusercontent.com/iaskeyz69/iaskeyz69/output/snake.svg" alt="Snake animation" />
 
 ###
-<img align="right" height="300" src="https://media1.tenor.com/m/CRHGaMQTTc8AAAAd/fortnite-master-chief.gif"  />
+
