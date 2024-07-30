@@ -82,3 +82,19 @@
 
 ###
 
+<div align="center">
+  <img height="150" src="https://media1.tenor.com/m/CRHGaMQTTc8AAAAd/fortnite-master-chief.gif"  />
+</div>
+
+###
+
+
+###
+
+<div align="center">
+  <a href="https://open.spotify.com/user/iaskeyz">
+    <img src="https://spotify-recently-played-readme.vercel.app/api?user=iaskeyz&count=5&unique=true" alt="Spotify recently played"  />
+  </a>
+</div>
+
+###
