@@ -1,4 +1,4 @@
-<h2 align="center">Hi 👋 JULIAS - the IT Monkey </h2>
+<h2 align="center"> 👋 JULIAS - the IT Monkey </h2>
 
 ###
 
