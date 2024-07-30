@@ -9,7 +9,7 @@
 
 ###
 
-<br clear="both">
+
 
 <img align="right" height="300" src="https://media1.tenor.com/m/CRHGaMQTTc8AAAAd/fortnite-master-chief.gif"  />
 
