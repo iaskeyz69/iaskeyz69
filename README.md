@@ -9,8 +9,6 @@
 
 - 📝 I regularly write articles on [https://satu-x.com/](https://satu-x.com/)
 
-- 📫 How to reach me **iaskeyz.09@gmail.com**
-
 - 📄 Know about my experiences [https://www.linkedin.com/in/julias-johari-0981b8258/](https://www.linkedin.com/in/julias-johari-0981b8258/)
 
 - ⚡ Fun fact **I am a monkey because i work for a banana**
