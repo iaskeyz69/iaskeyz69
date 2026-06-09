@@ -1,0 +1,120 @@
+name: Update HTB Stats
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  update-htb-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update HTB stats in README
+        env:
+          HTB_TOKEN: ${{ secrets.HTB_TOKEN }}
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          import sys
+          import urllib.request
+
+          USER_ID = "1643566"
+          PROFILE_URL = f"https://app.hackthebox.com/public/users/{USER_ID}"
+          token = os.environ.get("HTB_TOKEN", "").strip()
+
+          if not token:
+              print("HTB_TOKEN secret not set. Skipping auto-update.")
+              sys.exit(0)
+
+          def api_get(path):
+              req = urllib.request.Request(
+                  f"https://www.hackthebox.com/api/v4{path}",
+                  headers={
+                      "Authorization": f"Bearer {token}",
+                      "Accept": "application/json",
+                  },
+              )
+              with urllib.request.urlopen(req) as resp:
+                  return json.loads(resp.read().decode())
+
+          profile = api_get(f"/user/profile/basic/{USER_ID}")["profile"]
+          activity = api_get(f"/user/profile/activity/{USER_ID}").get("profile", {}).get("activity", [])
+
+          rank = profile.get("rank", "Unknown")
+          level = profile.get("rank_id", "?")
+          points = profile.get("points", 0)
+          global_rank = profile.get("ranking", "N/A")
+          user_owns = profile.get("user_owns", 0)
+          system_owns = profile.get("system_owns", 0)
+          machines = user_owns + system_owns
+
+          activity_lines = []
+          for item in activity[:5]:
+              name = item.get("name", "Unknown")
+              flag_type = item.get("type", "")
+              date = item.get("date", "")
+              emoji = "🟢" if flag_type == "root" else "🔵"
+              label = "root" if flag_type == "root" else "user"
+              activity_lines.append(f"{emoji} Solved <b>{name}</b> ({label}) — {date}")
+
+          if not activity_lines:
+              activity_lines.append("No recent public activity found.")
+
+          stats_block = f"""<p align="center">
+          <a href="{PROFILE_URL}" target="_blank">
+          <img src="https://img.shields.io/badge/Level-{level}-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Level {level}" />
+          </a>
+          <a href="{PROFILE_URL}" target="_blank">
+          <img src="https://img.shields.io/badge/Rank-{rank.replace(' ', '%20')}-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="{rank}" />
+          </a>
+          <a href="{PROFILE_URL}" target="_blank">
+          <img src="https://img.shields.io/badge/Global%20Rank-%23{global_rank}-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Global Rank #{global_rank}" />
+          </a>
+          <a href="{PROFILE_URL}" target="_blank">
+          <img src="https://img.shields.io/badge/Points-{points}-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="{points} Points" />
+          </a>
+          <a href="{PROFILE_URL}" target="_blank">
+          <img src="https://img.shields.io/badge/Machines-{machines}-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="{machines} Machines" />
+          </a>
+          </p>
+
+          <p align="center">
+          <b>Recent Activity</b><br/>
+          {('<br/>'.join(activity_lines))}<br/>
+          <a href="{PROFILE_URL}">View full profile, seasons & activity →</a>
+          </p>"""
+
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme = f.read()
+
+          updated = re.sub(
+              r"<!-- HTB-STATS:START -->.*?<!-- HTB-STATS:END -->",
+              f"<!-- HTB-STATS:START -->\n{stats_block}\n<!-- HTB-STATS:END -->",
+              readme,
+              flags=re.DOTALL,
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(updated)
+
+          print("HTB stats updated successfully.")
+          PY
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update HTB stats"
+          git push

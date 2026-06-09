@@ -17,29 +17,44 @@
 
 <!-- HTB-STATS:START -->
 <p align="center">
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Level-26-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Level 26" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Rank-Apprentice-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Apprentice" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/XP-524%2F604-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="524/604 XP" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Season%2011-Silver%20Tier-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Season 11 Silver Tier" /></a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Level-26-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Level 26" />
+</a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Rank-Apprentice-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Apprentice" />
+</a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Season%2011-%235152-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Season 11 Rank #5152" />
+</a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Points-110-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="110 Points" />
+</a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Flags-4%2F24-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="4/24 Flags" />
+</a>
 </p>
 
 <p align="center">
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Season%20Rank-%235152-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="Season Rank #5152" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Season%20Points-110-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="110 Season Points" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Flags-4%2F24-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="4/24 Flags" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Weekly%20Streak-1%20week-9FEF00?style=for-the-badge&logo=hackthebox&logoColor=black" alt="1 week streak" /></a>
-</p>
-
-<p align="center">
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Machines-10%2F534-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="10/534 Machines" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Sherlocks-0%2F154-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="0/154 Sherlocks" /></a>
-<a href="https://app.hackthebox.com/public/users/1643566" target="_blank"><img src="https://img.shields.io/badge/Challenges-0%2F832-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="0/832 Challenges" /></a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Machines-10%2F534-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="Machines 10/534" />
+</a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Sherlocks-0%2F154-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="Sherlocks 0/154" />
+</a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Challenges-0%2F832-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="Challenges 0/832" />
+</a>
+<a href="https://app.hackthebox.com/public/users/1643566" target="_blank">
+<img src="https://img.shields.io/badge/Streak-1%20week-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00" alt="1 week streak" />
+</a>
 </p>
 
 <p align="center">
 <b>Recent Activity</b><br/>
-🟢 Snapped (user + root) · 🟢 Connected (user + root) · 🟢 PingPong (root)<br/>
-<a href="https://app.hackthebox.com/public/users/1643566?tab=activity">View full activity, seasons & stats →</a>
+🟢 Solved <b>Snapped</b> (user + root) — 17 hours ago<br/>
+🟢 Solved <b>Connected</b> (user + root) — 17 hours ago<br/>
+🟢 Solved <b>PingPong</b> (root) — 9 days ago<br/>
+<a href="https://app.hackthebox.com/public/users/1643566">View full profile, seasons & activity →</a>
 </p>
 <!-- HTB-STATS:END -->
 
