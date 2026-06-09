@@ -58,8 +58,5 @@
 </p>
 <!-- HTB-STATS:END -->
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=iaskeyz69&show_icons=true&locale=en&layout=compact" alt="iaskeyz69" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=iaskeyz69&show_icons=true&locale=en" alt="iaskeyz69" /></p>
 
 <p><img align="center" src="https://streak-stats.demolab.com/?user=iaskeyz69&" alt="iaskeyz69" /></p>
