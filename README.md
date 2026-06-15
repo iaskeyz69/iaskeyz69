@@ -50,10 +50,6 @@
 </p>
 
 <p align="center">
-<b>Recent Activity</b><br/>
-🟢 Solved <b>Snapped</b> (user + root) — 17 hours ago<br/>
-🟢 Solved <b>Connected</b> (user + root) — 17 hours ago<br/>
-🟢 Solved <b>PingPong</b> (root) — 9 days ago<br/>
 <a href="https://app.hackthebox.com/public/users/1643566">View full profile, seasons & activity →</a>
 </p>
 <!-- HTB-STATS:END -->
