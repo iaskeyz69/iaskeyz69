@@ -1,5 +1,5 @@
 
-⚡ **I am a monkey because i work for a banana**
+⚡ **I am a monkey because i work for a banana** -
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
